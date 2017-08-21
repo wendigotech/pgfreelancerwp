@@ -20,9 +20,9 @@ a,
 a:hover,
 a:focus,
 a:active,
-a.active,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
+a.active,a.pg-state-active,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
     outline: 0;
-    color: #18bc9c;
+    color: rgba(255, 255, 255, 0);
 }
 
 h1,
@@ -137,6 +137,14 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
+
+    color: rgba(0, 0, 0, 0);
+
+    background-image: url('../img/white_logo_transparent_background.png');
+
+    background-position: inherit;
+
+    background-size: cover;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -145,6 +153,16 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
+
+    color: rgba(0, 0, 0, 0);
+
+    background-image: url('../img/white_logo_dark_background.jpg');
+
+    background-position: inherit;
+
+    background-size: contain;
+
+    background-repeat: no-repeat;
     }
 }
 
@@ -173,6 +191,8 @@ background-color: rgba(0, 164, 255, 0.85);
     border: 0;
 
 background-color: rgba(0, 164, 255, 0.85);
+
+border-radius: 0 0 130px 130px;
 }
 
 section {
@@ -268,7 +288,7 @@ section.success {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
-.btn-outline.active,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
+.btn-outline.active,.btn-outline.pg-state-active,.btn-outline.pg-state-focus,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
@@ -365,7 +385,7 @@ footer .footer-below {
 
 .btn:focus,
 .btn:active,
-.btn.active,.btn.pg-state-focus,.btn.pg-state-active {
+.btn.active,.btn.pg-state-focus,.btn.pg-state-focus,.btn.pg-state-active {
     outline: 0;
 }
 
