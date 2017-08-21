@@ -20,7 +20,7 @@ a,
 a:hover,
 a:focus,
 a:active,
-a.active {
+a.active,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
     outline: 0;
     color: #18bc9c;
 }
@@ -82,7 +82,8 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+
+background-color: rgba(0, 164, 255, 0.85);
 }
 
 header .container {
@@ -151,9 +152,11 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
+
+background-color: rgba(0, 164, 255, 0.85);
 }
 
-.navbar a:focus {
+.navbar a:focus,.navbar a.pg-state-focus {
     outline: 0;
 }
 
@@ -161,13 +164,15 @@ header .intro-text .skills {
     letter-spacing: 1px;
 }
 
-.navbar .navbar-nav li a:focus {
+.navbar .navbar-nav li a:focus,.navbar .navbar-nav li a.pg-state-focus {
     outline: 0;
 }
 
 .navbar-default,
 .navbar-inverse {
     border: 0;
+
+background-color: rgba(0, 164, 255, 0.85);
 }
 
 section {
@@ -217,7 +222,7 @@ section.success {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#portfolio .portfolio-item .portfolio-link .caption:hover,#portfolio .portfolio-item .portfolio-link .caption.pg-state-hover {
     opacity: 1;
 }
 
@@ -263,7 +268,7 @@ section.success {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
-.btn-outline.active {
+.btn-outline.active,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
@@ -360,7 +365,7 @@ footer .footer-below {
 
 .btn:focus,
 .btn:active,
-.btn.active {
+.btn.active,.btn.pg-state-focus,.btn.pg-state-active {
     outline: 0;
 }
 
@@ -381,7 +386,7 @@ footer .footer-below {
     line-height: 28px;
 }
 
-.scroll-top .btn:focus {
+.scroll-top .btn:focus,.scroll-top .btn.pg-state-focus {
     outline: 0;
 }
 
@@ -419,7 +424,7 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover,.portfolio-modal .close-modal.pg-state-hover {
     opacity: .3;
 }
 
