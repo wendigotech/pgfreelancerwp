@@ -20,7 +20,7 @@ a,
 a:hover,
 a:focus,
 a:active,
-a.active,a.pg-state-active,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
+a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
     outline: 0;
     color: rgba(255, 255, 255, 0);
 }
@@ -83,7 +83,7 @@ header {
     text-align: center;
     color: #fff;
 
-background-color: rgba(0, 164, 255, 0.85);
+background-color: #00a4ff;
 }
 
 header .container {
@@ -190,7 +190,7 @@ background-color: rgba(0, 164, 255, 0.85);
 .navbar-inverse {
     border: 0;
 
-background-color: rgba(0, 164, 255, 0.85);
+background-color: rgba(0, 164, 255, 0.66);
 
 border-radius: 0 0 130px 130px;
 }
@@ -288,7 +288,7 @@ section.success {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
-.btn-outline.active,.btn-outline.pg-state-active,.btn-outline.pg-state-focus,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
+.btn-outline.active,.btn-outline.pg-state-focus,.btn-outline.pg-state-focus,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
