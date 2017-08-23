@@ -43,4 +43,7 @@
 }.navbar-default .navbar-brand{  color: rgba(0, 0, 0, 0);background-image: url('img/white_logo_transparent_background.png');background-size: cover;background-position: center center;width: 231px}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus,.navbar-default .navbar-brand.pg-state-hover,.navbar-default .navbar-brand.pg-state-hover,.navbar-default .navbar-brand.pg-state-focus{color:rgba(24, 188, 156, 0);background-image: url('img/logo_white_background_3D_new.png')}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus,.navbar-default .navbar-nav>li>a.pg-state-hover,.navbar-default .navbar-nav>li>a.pg-state-hover,.navbar-default .navbar-nav>li>a.pg-state-focus{color:#000000;background-color:transparent}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:transparent;text-align: center;font-family: bangers;font-size: 19px}.navbar-default,
 .navbar-inverse {
     border: 0;border-bottom-left-radius: 52px;border-bottom-right-radius: 50px;
+}header {
+    text-align: center;
+    color: #fff;background-color: #38b5fe;
 }
