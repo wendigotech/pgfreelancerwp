@@ -45,5 +45,11 @@
     border: 0;border-bottom-left-radius: 52px;border-bottom-right-radius: 50px;
 }header {
     text-align: center;
-    color: #fff;background-color: #38b5fe;
+    color: #fff;background-color: #3db3f8;font-family: bangers;
+}header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: bangers;
+    font-size: 4em;
+    font-weight: 700;
 }
