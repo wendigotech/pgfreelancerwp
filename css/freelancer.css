@@ -20,7 +20,7 @@ a,
 a:hover,
 a:focus,
 a:active,
-a.active {
+a.active,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
     outline: 0;
     color: #18bc9c;
 }
@@ -153,7 +153,7 @@ header .intro-text .skills {
     font-weight: 700;
 }
 
-.navbar a:focus {
+.navbar a:focus,.navbar a.pg-state-focus {
     outline: 0;
 }
 
@@ -161,7 +161,7 @@ header .intro-text .skills {
     letter-spacing: 1px;
 }
 
-.navbar .navbar-nav li a:focus {
+.navbar .navbar-nav li a:focus,.navbar .navbar-nav li a.pg-state-focus {
     outline: 0;
 }
 
@@ -217,7 +217,7 @@ section.success {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover {
+#portfolio .portfolio-item .portfolio-link .caption:hover,#portfolio .portfolio-item .portfolio-link .caption.pg-state-hover {
     opacity: 1;
 }
 
@@ -263,7 +263,7 @@ section.success {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
-.btn-outline.active {
+.btn-outline.active,.btn-outline.pg-state-focus,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
@@ -360,7 +360,7 @@ footer .footer-below {
 
 .btn:focus,
 .btn:active,
-.btn.active {
+.btn.active,.btn.pg-state-active,.btn.pg-state-focus,.btn.pg-state-active {
     outline: 0;
 }
 
@@ -381,7 +381,7 @@ footer .footer-below {
     line-height: 28px;
 }
 
-.scroll-top .btn:focus {
+.scroll-top .btn:focus,.scroll-top .btn.pg-state-focus {
     outline: 0;
 }
 
@@ -419,7 +419,7 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover {
+.portfolio-modal .close-modal:hover,.portfolio-modal .close-modal.pg-state-hover {
     opacity: .3;
 }
 
