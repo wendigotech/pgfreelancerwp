@@ -1,3 +1,43 @@
 .navbar-custom {
   background-color: rgba(61, 179, 248, 0.7)
 }
+.navbar-custom-brand {
+}@media(min-width:768px) {
+    .navbar-fixed-top {
+        padding: 25px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    }
+
+    .navbar-fixed-top .navbar-brand {
+        font-size: 2em;
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        transition: all .3s;
+
+    background-image: url('img/white_logo_transparent_background.png');
+
+    background-position: inherit;
+
+    background-size: cover;
+
+    color: rgba(0, 0, 0, 0);
+    }
+
+    .navbar-fixed-top.navbar-shrink {
+        padding: 7px 0;
+    }
+
+    .navbar-fixed-top.navbar-shrink .navbar-brand {
+        font-size: 1.5em;
+
+    color: rgba(0, 0, 0, 0);
+
+    background-image: url('img/logo_transparent_background.png');
+
+    background-position: center center;
+
+    background-size: contain;
+    }
+}

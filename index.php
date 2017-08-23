@@ -12,7 +12,7 @@ get_header(); ?>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a>
+                    <a class="navbar-brand navbar-custom-brand navbar-shrink" href="<?php echo esc_url( home_url() ); ?>" img resposive=""><?php _e( 'Harold Pine', 'freelancer' ); ?> </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -208,63 +208,6 @@ get_header(); ?>
                         </div>
                     </div>
                 </section>
-                <footer class="text-center">
-                    <div class="footer-above">
-                        <div class="container">
-                            <div class="row">
-                                <div class="footer-col col-md-4">
-                                    <h3><?php echo get_post_meta( get_the_ID(), 'footer1_title', true ); ?></h3>
-                                    <p><?php echo get_post_meta( get_the_ID(), 'footer1_text', true ); ?></p>
-                                </div>
-                                <div class="footer-col col-md-4">
-                                    <h3><?php echo get_post_meta( get_the_ID(), 'footer2_title', true ); ?></h3>
-                                    <ul class="list-inline">
-                                        <?php if ( get_post_meta( get_the_ID(), 'social_facebook', true ) ) : ?>
-                                            <li>
-                                                <a href="<?php echo get_post_meta( get_the_ID(), 'social_facebook', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
-                                            </li>
-                                        <?php endif; ?>
-                                        <?php if ( get_post_meta( get_the_ID(), 'social_google', true ) ) : ?>
-                                            <li>
-                                                <a href="<?php echo get_post_meta( get_the_ID(), 'social_google', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
-                                            </li>
-                                        <?php endif; ?>
-                                        <?php if ( get_post_meta( get_the_ID(), 'social_twitter', true ) ) : ?>
-                                            <li>
-                                                <a href="<?php echo get_post_meta( get_the_ID(), 'social_twitter', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
-                                            </li>
-                                        <?php endif; ?>
-                                        <?php if ( get_post_meta( get_the_ID(), 'social_twitter', true ) ) : ?>
-                                            <li>
-                                                <a href="<?php echo get_post_meta( get_the_ID(), 'social_linkedin', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
-                                            </li>
-                                        <?php endif; ?>
-                                        <?php if ( get_post_meta( get_the_ID(), 'social_dribbble', true ) ) : ?>
-                                            <li>
-                                                <a href="<?php echo get_post_meta( get_the_ID(), 'social_dribbble', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
-                                            </li>
-                                        <?php endif; ?>
-                                    </ul>
-                                </div>
-                                <div class="footer-col col-md-4">
-                                    <h3><?php echo get_post_meta( get_the_ID(), 'footer3_title', true ); ?></h3>
-                                    <p><?php echo get_post_meta( get_the_ID(), 'footer3_text', true ); ?></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer-below">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <?php _e( 'Copyright &copy;', 'freelancer' ); ?> 
-                                    <?php bloginfo( 'name' ); ?> 
-                                    <?php echo date( 'Y' ) ?>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
             </div>
         <?php else : ?>
             <p><?php _e( 'Sorry, no posts matched your criteria.', 'freelancer' ); ?></p>
@@ -275,6 +218,63 @@ get_header(); ?>
         <!-- Contact Section -->
         <!-- Footer -->
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-4">
+                            <h3><?php echo get_post_meta( get_the_ID(), 'footer1_title', true ); ?></h3>
+                            <p><?php echo get_post_meta( get_the_ID(), 'footer1_text', true ); ?></p>
+                        </div>
+                        <div class="footer-col col-md-4">
+                            <h3><?php echo get_post_meta( get_the_ID(), 'footer2_title', true ); ?></h3>
+                            <ul class="list-inline">
+                                <?php if ( get_post_meta( get_the_ID(), 'social_facebook', true ) ) : ?>
+                                    <li>
+                                        <a href="<?php echo get_post_meta( get_the_ID(), 'social_facebook', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ( get_post_meta( get_the_ID(), 'social_google', true ) ) : ?>
+                                    <li>
+                                        <a href="<?php echo get_post_meta( get_the_ID(), 'social_google', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-google-plus"></i></a>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ( get_post_meta( get_the_ID(), 'social_twitter', true ) ) : ?>
+                                    <li>
+                                        <a href="<?php echo get_post_meta( get_the_ID(), 'social_twitter', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ( get_post_meta( get_the_ID(), 'social_twitter', true ) ) : ?>
+                                    <li>
+                                        <a href="<?php echo get_post_meta( get_the_ID(), 'social_linkedin', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+                                    </li>
+                                <?php endif; ?>
+                                <?php if ( get_post_meta( get_the_ID(), 'social_dribbble', true ) ) : ?>
+                                    <li>
+                                        <a href="<?php echo get_post_meta( get_the_ID(), 'social_dribbble', true ); ?>" class="btn-social btn-outline"><i class="fa fa-fw fa-dribbble"></i></a>
+                                    </li>
+                                <?php endif; ?>
+                            </ul>
+                        </div>
+                        <div class="footer-col col-md-4">
+                            <h3><?php echo get_post_meta( get_the_ID(), 'footer3_title', true ); ?></h3>
+                            <p><?php echo get_post_meta( get_the_ID(), 'footer3_text', true ); ?></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-below">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <?php _e( 'Copyright &copy;', 'freelancer' ); ?> 
+                            <?php bloginfo( 'name' ); ?> 
+                            <?php echo date( 'Y' ) ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <div class="scroll-top page-scroll visible-xs visble-sm">
             <a class="btn btn-primary" href="#page-top"><i class="fa fa-chevron-up"></i></a>
         </div>
