@@ -20,9 +20,9 @@ a,
 a:hover,
 a:focus,
 a:active,
-a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
+a.active {
     outline: 0;
-    color: rgba(255, 255, 255, 0);
+    color: #18bc9c;
 }
 
 h1,
@@ -82,8 +82,7 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-
-background-color: #00a4ff;
+    background: #18bc9c;
 }
 
 header .container {
@@ -137,14 +136,6 @@ header .intro-text .skills {
         -webkit-transition: all .3s;
         -moz-transition: all .3s;
         transition: all .3s;
-
-    color: rgba(0, 0, 0, 0);
-
-    background-image: url('../img/white_logo_transparent_background.png');
-
-    background-position: inherit;
-
-    background-size: cover;
     }
 
     .navbar-fixed-top.navbar-shrink {
@@ -153,16 +144,6 @@ header .intro-text .skills {
 
     .navbar-fixed-top.navbar-shrink .navbar-brand {
         font-size: 1.5em;
-
-    color: rgba(0, 0, 0, 0);
-
-    background-image: url('../img/white_logo_dark_background.jpg');
-
-    background-position: inherit;
-
-    background-size: contain;
-
-    background-repeat: no-repeat;
     }
 }
 
@@ -170,11 +151,9 @@ header .intro-text .skills {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-
-background-color: rgba(0, 164, 255, 0.85);
 }
 
-.navbar a:focus,.navbar a.pg-state-focus {
+.navbar a:focus {
     outline: 0;
 }
 
@@ -182,17 +161,13 @@ background-color: rgba(0, 164, 255, 0.85);
     letter-spacing: 1px;
 }
 
-.navbar .navbar-nav li a:focus,.navbar .navbar-nav li a.pg-state-focus {
+.navbar .navbar-nav li a:focus {
     outline: 0;
 }
 
 .navbar-default,
 .navbar-inverse {
     border: 0;
-
-background-color: rgba(0, 164, 255, 0.66);
-
-border-radius: 0 0 130px 130px;
 }
 
 section {
@@ -242,7 +217,7 @@ section.success {
     transition: all ease .5s;
 }
 
-#portfolio .portfolio-item .portfolio-link .caption:hover,#portfolio .portfolio-item .portfolio-link .caption.pg-state-hover {
+#portfolio .portfolio-item .portfolio-link .caption:hover {
     opacity: 1;
 }
 
@@ -288,7 +263,7 @@ section.success {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
-.btn-outline.active,.btn-outline.pg-state-focus,.btn-outline.pg-state-focus,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
+.btn-outline.active {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
@@ -385,7 +360,7 @@ footer .footer-below {
 
 .btn:focus,
 .btn:active,
-.btn.active,.btn.pg-state-focus,.btn.pg-state-focus,.btn.pg-state-active {
+.btn.active {
     outline: 0;
 }
 
@@ -406,7 +381,7 @@ footer .footer-below {
     line-height: 28px;
 }
 
-.scroll-top .btn:focus,.scroll-top .btn.pg-state-focus {
+.scroll-top .btn:focus {
     outline: 0;
 }
 
@@ -444,7 +419,7 @@ footer .footer-below {
     cursor: pointer;
 }
 
-.portfolio-modal .close-modal:hover,.portfolio-modal .close-modal.pg-state-hover {
+.portfolio-modal .close-modal:hover {
     opacity: .3;
 }
 

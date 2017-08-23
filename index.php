@@ -6,7 +6,13 @@ get_header(); ?>
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header page-scroll">
-                    <a href="<?php echo esc_url( home_url() ); ?>" class="navbar-brand"><?php _e( 'Harold Pine', 'freelancer' ); ?> </a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only"><?php _e( 'Toggle navigation', 'freelancer' ); ?></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>"><?php bloginfo( 'name' ); ?></a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -58,7 +64,7 @@ get_header(); ?>
                 ?>
                 <?php $portfolio = new WP_Query( $portfolio_args ); ?>
                 <?php if ( $portfolio->have_posts() ) : ?>
-                    <section id="portfolio" style="background-image: url('<?php echo esc_url( get_template_directory_uri() ); ?>/img/Dark-Treetops.jpg');background-attachment: fixed;background-size: cover">
+                    <section id="portfolio">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
