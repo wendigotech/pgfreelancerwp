@@ -68,7 +68,7 @@ get_header(); ?>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
-                                    <h2><?php _e( 'Portfolio', 'freelancer' ); ?></h2>
+                                    <h2><?php _e( 'Portfolio 1', 'freelancer' ); ?></h2>
                                     <hr class="star-primary">
                                 </div>
                             </div>
@@ -90,6 +90,45 @@ get_header(); ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php endwhile; ?>
+                            </div>
+                        </div>
+                    </section>
+                <?php endif; ?>
+                <?php
+                    $portfolio2_args = array(
+                        'post_type' => 'portfolio_item2',
+                        'post_status' => 'publish',
+                        'nopaging' => true,
+                        'order' => 'ASC',
+                        'orderby' => 'menu_order'
+                    )
+                ?>
+                <?php $portfolio2 = new WP_Query( $portfolio2_args ); ?>
+                <?php if ( $portfolio2->have_posts() ) : ?>
+                    <section id="portfolio">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-12 text-center">
+                                    <h2><?php _e( 'Portfolio 2', 'freelancer' ); ?></h2>
+                                    <hr class="star-primary">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <?php while ( $portfolio2->have_posts() ) : $portfolio2->the_post(); ?>
+                                    <div class="col-sm-4 portfolio-item">
+                                        <a href="<?php echo '#portfolioModal-'.get_the_ID() ?>" class="portfolio-link" data-toggle="modal">
+                                            <div class="caption">
+                                                <div class="caption-content">
+                                                    <i class="fa fa-search-plus fa-3x"></i>
+                                                </div>
+                                            </div>
+                                            <?php the_post_thumbnail( null, array(
+                                                    'class' => 'img-responsive'
+                                            ) ); ?>
+                                        </a>
+                                    </div>
+                                <?php endwhile; ?>
+                                <?php wp_reset_postdata(); ?>
                             </div>
                         </div>
                     </section>
