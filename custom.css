@@ -78,4 +78,9 @@ hr.star-primary {
     transition: all ease .5s;background-color: #38b5fe;
 }section.success {
     color: #fff;background-color: #38b5fe;font-family: bangers;font-variant: small-caps;box-shadow-type-0: inside;box-shadow: inset -2px 55px 35px , 1px 75px 28px #38b5fe;
-}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-focus{color:#ffffff;background-color:#1a242f;border-radius: 20px;border: 2px outset #ffffff}
+}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-focus{color:#ffffff;background-color:#1a242f;border-radius: 20px;border: 2px outset #ffffff}footer {
+    color: #fff;text-shadow: 5px 0px 17px;
+}footer .footer-above {
+    padding-top: 50px;
+    background-color: #38b5fe;box-shadow: -1px -60px 41px #38b5fe;
+}
