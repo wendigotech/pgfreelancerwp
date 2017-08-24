@@ -77,5 +77,5 @@ hr.star-primary {
     -moz-transition: all ease .5s;
     transition: all ease .5s;background-color: #38b5fe;
 }section.success {
-    color: #fff;background-color: #38b5fe;font-family: bangers;font-variant: small-caps;
+    color: #fff;background-color: #38b5fe;font-family: bangers;font-variant: small-caps;box-shadow-type-0: inside;box-shadow: inset -2px 55px 35px;
 }
