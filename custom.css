@@ -77,10 +77,13 @@ hr.star-primary {
     -moz-transition: all ease .5s;
     transition: all ease .5s;background-color: #38b5fe;
 }section.success {
-    color: #fff;background-color: #38b5fe;font-family: bangers;font-variant: small-caps;box-shadow-type-0: inside;box-shadow: inset -2px 55px 35px , 1px 75px 28px #38b5fe;
+    color: #fff;background-color: #38b5fe;font-family: bangers;font-variant: small-caps;box-shadow-type-0: inside;box-shadow: inset 0px 55px 77px , 1px 65px 27px -4px #38b5fe;
 }.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-focus{color:#ffffff;background-color:#1a242f;border-radius: 20px;border: 2px outset #ffffff}footer {
     color: #fff;text-shadow: 5px 0px 17px;
 }footer .footer-above {
     padding-top: 50px;
-    background-color: #38b5fe;box-shadow: -1px -60px 41px #38b5fe;
+    background-color: #38b5fe;box-shadow: -8px -24px 50px 21px #38b5fe;
+}footer .footer-below {
+    padding: 25px 0;
+    background-color: #000000;font-family: bangers;box-shadow-type-0: inside;box-shadow: inset 0px -12px 31px;
 }
