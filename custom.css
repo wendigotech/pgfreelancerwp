@@ -88,4 +88,18 @@ hr.star-primary {
     background-color: #000000;font-family: bangers;box-shadow-type-0: inside;box-shadow: inset 0px -12px 31px;
 }footer h3 {
     margin-bottom: 30px;font-family: bangers;letter-spacing: 4px;
+}a,
+a:hover,
+a:focus,
+a:active,
+a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
+    outline: 0;
+    color: #18bc9c;
+}.btn-outline:hover,
+.btn-outline:focus,
+.btn-outline:active,
+.btn-outline.active,.btn-outline.pg-state-focus,.btn-outline.pg-state-focus,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
+    border: solid 2px #fff;
+    color: #000000;
+    background: #fff;
 }
