@@ -177,6 +177,12 @@ section {
 section h2 {
     margin: 0;
     font-size: 3em;
+
+font-family: bangers;
+
+letter-spacing: 2px;
+
+text-shadow: 1px -1px 8px;
 }
 
 section.success {
