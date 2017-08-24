@@ -46,7 +46,7 @@ get_header(); ?>
                                 ) ); ?>
                                 <div class="intro-text">
                                     <span class="name"><?php bloginfo( 'name' ); ?></span>
-                                    <hr class="star-light">
+                                    <hr class="star-primary">
                                     <span class="skills"><?php bloginfo( 'description' ); ?></span>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ get_header(); ?>
                         <div class="row">
                             <div class="col-lg-12 text-center">
                                 <h2><?php the_title(); ?></h2>
-                                <hr class="star-light">
+                                <hr class="star-primary">
                             </div>
                         </div>
                         <?php
