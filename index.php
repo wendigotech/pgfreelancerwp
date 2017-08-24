@@ -375,6 +375,62 @@ get_header(); ?>
             <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
+        <?php
+            $modals2_args = array(
+                'post_type' => 'portfolio_item2',
+                'post_status' => 'publish',
+                'nopaging' => true,
+                'order' => 'ASC',
+                'orderby' => 'menu_order'
+            )
+        ?>
+        <?php $modals2 = new WP_Query( $modals2_args ); ?>
+        <?php if ( $modals2->have_posts() ) : ?>
+            <?php while ( $modals2->have_posts() ) : $modals2->the_post(); ?>
+                <div class="portfolio-modal modal fade" id="portfolioModal2-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class="modal-content">
+                        <div class="close-modal" data-dismiss="modal">
+                            <div class="lr">
+                                <div class="rl"> </div>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <div class="modal-body">
+                                        <h2><?php the_title( 'wp-the-title' ); ?></h2>
+                                        <hr class="star-primary" />
+                                        <?php the_post_thumbnail( 'wp-the-post-thumbnail', array(
+                                                'class' => 'img-responsive img-centered'
+                                        ) ); ?>
+                                        <?php the_content( __( 'wp-the-content', 'freelancer' ) ); ?>
+                                        <ul class="list-inline item-details">
+                                            <li>
+                                                <?php _e( 'Client:', 'freelancer' ); ?>
+                                                <strong><a href="http://startbootstrap.com"><?php _e( 'Start Bootstrap', 'freelancer' ); ?></a></strong>
+                                            </li>
+                                            <li>
+                                                <?php _e( 'Date:', 'freelancer' ); ?>
+                                                <strong><a href="http://startbootstrap.com"><?php _e( 'April 2014', 'freelancer' ); ?></a></strong>
+                                            </li>
+                                            <li>
+                                                <?php _e( 'Service:', 'freelancer' ); ?>
+                                                <strong><a href="http://startbootstrap.com"><?php _e( 'Web Development', 'freelancer' ); ?></a></strong>
+                                            </li>
+                                        </ul>
+                                        <button class="btn btn-default" type="button" data-dismiss="modal">
+                                            <i class="fa fa-times"></i> 
+                                            <?php _e( 'Close', 'freelancer' ); ?>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+        <?php endif; ?>
         <!-- jQuery -->
         <!-- Bootstrap Core JavaScript -->
         <!-- Plugin JavaScript -->
