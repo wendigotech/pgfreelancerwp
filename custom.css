@@ -82,8 +82,10 @@ hr.star-primary {
     color: #fff;text-shadow: 5px 0px 17px;
 }footer .footer-above {
     padding-top: 50px;
-    background-color: #38b5fe;box-shadow: -8px -24px 50px 21px #38b5fe;
+    background-color: #38b5fe;box-shadow: -8px -24px 50px 21px #38b5fe;font-family: bangers;
 }footer .footer-below {
     padding: 25px 0;
     background-color: #000000;font-family: bangers;box-shadow-type-0: inside;box-shadow: inset 0px -12px 31px;
+}footer h3 {
+    margin-bottom: 30px;font-family: bangers;letter-spacing: 4px;
 }
