@@ -193,9 +193,12 @@ get_header(); ?>
                 </section>
                 <?php
                     $contact_args = array(
+                        'post_type' => 'any',
                         'post_type' => 'contact_item1',
                         'post_status' => 'publish',
-                        'nopaging' => true
+                        'nopaging' => true,
+                        'order' => 'ASC',
+                        'orderby' => 'menu_order'
                     )
                 ?>
                 <?php $contact = new WP_Query( $contact_args ); ?>
