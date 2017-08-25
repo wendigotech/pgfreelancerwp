@@ -193,11 +193,10 @@ get_header(); ?>
                 </section>
                 <?php
                     $contact_args = array(
+                        'post_type' => 'post',
                         'post_type' => 'contact_item',
                         'post_status' => 'publish',
-                        'nopaging' => true,
-                        'order' => 'ASC',
-                        'orderby' => 'menu_order'
+                        'nopaging' => true
                     )
                 ?>
                 <?php $contact = new WP_Query( $contact_args ); ?>
@@ -211,7 +210,6 @@ get_header(); ?>
                                 </div>
                             </div>
                             <div class="row">
-                                <?php $contact_item_number = 0; ?>
                                 <?php while ( $contact->have_posts() ) : $contact->the_post(); ?>
                                     <div class="col-lg-8 col-lg-offset-2">
                                         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
@@ -264,8 +262,6 @@ get_header(); ?>
                                             </div>
                                         </form>
                                     </div>
-                                    <?php $contact_item_number++; ?>
-                                    <?php if( $contact_item_number % 1 == 0 ) echo '<div class="clearfix visible-lg-block"></div>'; ?>
                                 <?php endwhile; ?>
                                 <?php wp_reset_postdata(); ?>
                             </div>
