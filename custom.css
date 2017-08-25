@@ -106,7 +106,7 @@ a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.p
     display: block;
     position: relative;
     margin: 0 auto;
-    max-width: 400px;transform: rotateX(20deg) rotateY(16deg) rotate(9deg);
+    max-width: 400px;transform: rotateX(-12deg) rotateY(23deg) rotate(8deg);
 }.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;max-width:100%;height:auto;border-radius: 45px;border-style: inset;border-color: #000000}
 .bkg {
   background-image: url('img/photo-1500145588304-deb802b4af76.jpg');
