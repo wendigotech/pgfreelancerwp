@@ -83,9 +83,13 @@ get_header(); ?>
                                                         <i class="fa fa-search-plus fa-3x"></i>
                                                     </div>
                                                 </div>
-                                                <?php the_post_thumbnail( null, array(
+                                                <?php
+                                                    if ( has_post_thumbnail() ) {
+                                                        the_post_thumbnail( null, array(
                                                         'class' => 'img-responsive'
-                                                ) ); ?>
+                                                    ) );
+                                                    }
+                                                 ?>
                                             </a>
                                         </div>
                                         <?php $portfolio_item_number++; ?>
