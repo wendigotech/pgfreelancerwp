@@ -107,4 +107,4 @@ a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.p
     position: relative;
     margin: 0 auto;
     max-width: 400px;
-}.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:list-item;max-width:100%;height:auto;border-radius: 45px;border: 7px inset #000000;vertical-align: bottom;float: right}
+}.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:inline;max-width:100%;height:auto;border-radius: 45px;border: 7px inset #000000}
