@@ -112,6 +112,6 @@ a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.p
   background-image: url('img/photo-1500145588304-deb802b4af76.jpg');
 background-attachment: fixed;
 background-size: cover;
-transform: rotateX(6deg) rotateY(-14deg) rotate(-6deg);
-box-shadow: inset 32px -55px 157px 101px #ffffff
+transform: rotateX(-8deg) rotateY(-23deg) rotate(-6deg);
+box-shadow: none
 }
