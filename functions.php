@@ -92,7 +92,7 @@ function freelancer_init() {
                 'singular_name' => __( 'Contact Item1', 'freelancer' )
             ),
         'public' => true,
-        'supports' => array( 'title', 'editor', 'thumbnail', 'post-formats', 'page-attributes', 'revisions', 'comments', 'custom-fields', 'trackbacks', 'excerpt', 'author' )
+        'supports' => array( 'post-formats', 'page-attributes', 'revisions', 'custom-fields', 'trackbacks', 'thumbnail', 'author', 'excerpt', 'editor', 'comments', 'title' )
     ));
 
     /* Pinegrow generated Custom Post Types End */
