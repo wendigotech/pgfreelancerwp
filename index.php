@@ -193,8 +193,7 @@ get_header(); ?>
                 </section>
                 <?php
                     $contact_args = array(
-                        'post_type' => 'post',
-                        'post_type' => 'contact_item',
+                        'post_type' => 'contact_item1',
                         'post_status' => 'publish',
                         'nopaging' => true
                     )
