@@ -107,4 +107,6 @@ a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.p
     position: relative;
     margin: 0 auto;
     max-width: 400px;
-}.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:flex;max-width:100%;border-style: inset;border-color: #000000;max-height: 100%}
+}.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;max-width:100%;border-style: inset;border-color: #000000;height: auto}#portfolio .portfolio-item {
+        margin: 0 0 30px;position: relative;border-radius: 45px;display: flex;
+    }
