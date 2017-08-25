@@ -95,34 +95,34 @@ get_header(); ?>
                     </section>
                 <?php endif; ?>
                 <?php
-                    $portfolio_args = array(
-                        'post_type' => 'portfolio_item',
+                    $portfolio2_args = array(
+                        'post_type' => 'portfolio_item2',
                         'post_status' => 'publish',
                         'nopaging' => true,
                         'order' => 'ASC',
                         'orderby' => 'menu_order'
                     )
                 ?>
-                <?php $portfolio = new WP_Query( $portfolio_args ); ?>
-                <?php if ( $portfolio->have_posts() ) : ?>
+                <?php $portfolio2 = new WP_Query( $portfolio2_args ); ?>
+                <?php if ( $portfolio2->have_posts() ) : ?>
                     <section id="portfolio">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
                                     <h2><?php _e( 'Portfolio 2', 'freelancer' ); ?></h2>
-                                    <hr class="star-primary">
+                                    <hr class="star-primary" />
                                 </div>
                             </div>
                             <div class="row">
-                                <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
+                                <?php while ( $portfolio2->have_posts() ) : $portfolio2->the_post(); ?>
                                     <div class="col-sm-4 portfolio-item">
-                                        <a href="<?php echo '#portfolioModal-'.get_the_ID() ?>" class="portfolio-link" data-toggle="modal">
+                                        <a class="portfolio-link" href="<?php echo '#portfolioModal2-'.get_the_ID() ?>" data-toggle="modal">
                                             <div class="caption">
                                                 <div class="caption-content">
                                                     <i class="fa fa-search-plus fa-3x"></i>
                                                 </div>
                                             </div>
-                                            <?php the_post_thumbnail( null, array(
+                                            <?php the_post_thumbnail( '', array(
                                                     'class' => 'img-responsive'
                                             ) ); ?>
                                         </a>
@@ -377,7 +377,7 @@ get_header(); ?>
         <?php endif; ?>
         <?php
             $modals_args = array(
-                'post_type' => 'portfolio_item',
+                'post_type' => 'portfolio_item2',
                 'post_status' => 'publish',
                 'nopaging' => true,
                 'order' => 'ASC',
@@ -387,7 +387,7 @@ get_header(); ?>
         <?php $modals = new WP_Query( $modals_args ); ?>
         <?php if ( $modals->have_posts() ) : ?>
             <?php while ( $modals->have_posts() ) : $modals->the_post(); ?>
-                <div class="portfolio-modal modal fade" id="portfolioModal-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="portfolio-modal modal fade" id="portfolioModal2-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-content">
                         <div class="close-modal" data-dismiss="modal">
                             <div class="lr">
