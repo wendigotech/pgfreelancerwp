@@ -82,8 +82,7 @@ function freelancer_init() {
                 'singular_name' => __( 'Portfolio item2', 'freelancer' )
             ),
         'public' => true,
-        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' ),
-        'menu_icon' => 'dashicons-portfolio'
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' )
     ));
 
     /* Pinegrow generated Custom Post Types End */
