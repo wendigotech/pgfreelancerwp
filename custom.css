@@ -102,4 +102,9 @@ a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.p
     border: solid 2px #fff;
     color: #000000;
     background: #fff;
+}#portfolio .portfolio-item .portfolio-link {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 400px;
 }
