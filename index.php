@@ -64,7 +64,7 @@ get_header(); ?>
                 ?>
                 <?php $portfolio = new WP_Query( $portfolio_args ); ?>
                 <?php if ( $portfolio->have_posts() ) : ?>
-                    <section id="portfolio">
+                    <section id="portfolio" class="bkg2">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
@@ -112,7 +112,7 @@ get_header(); ?>
                 ?>
                 <?php $portfolio2 = new WP_Query( $portfolio2_args ); ?>
                 <?php if ( $portfolio2->have_posts() ) : ?>
-                    <section id="portfolio" class="bkg">
+                    <section id="portfolio" class="bkg bkg2">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">

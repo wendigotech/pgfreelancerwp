@@ -115,3 +115,8 @@ background-size: cover;
 transform: rotateX(-8deg) rotateY(-23deg) rotate(-6deg);
 box-shadow: none
 }
+.bkg2 {
+  background-image: url('img/photo-1500145588304-deb802b4af76.jpg');
+background-size: cover;
+background-attachment: fixed
+}
