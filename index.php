@@ -74,6 +74,7 @@ get_header(); ?>
                             </div>
                             <div class="row">
                                 <?php while ( have_posts() ) : the_post(); ?>
+                                    <?php $portfolio_item_number = 0; ?>
                                     <?php while ( $portfolio->have_posts() ) : $portfolio->the_post(); ?>
                                         <div class="col-sm-4 portfolio-item">
                                             <a href="<?php echo '#portfolioModal-'.get_the_ID() ?>" class="portfolio-link" data-toggle="modal">
@@ -87,6 +88,8 @@ get_header(); ?>
                                                 ) ); ?>
                                             </a>
                                         </div>
+                                        <?php $portfolio_item_number++; ?>
+                                        <?php if( $portfolio_item_number % 3 == 0 ) echo '<div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>'; ?>
                                     <?php endwhile; ?>
                                     <?php wp_reset_postdata(); ?>
                                 <?php endwhile; ?>
@@ -105,28 +108,31 @@ get_header(); ?>
                 ?>
                 <?php $portfolio2 = new WP_Query( $portfolio2_args ); ?>
                 <?php if ( $portfolio2->have_posts() ) : ?>
-                    <section id="portfolio">
+                    <section id="portfolio2">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
                                     <h2><?php _e( 'Portfolio 2', 'freelancer' ); ?></h2>
-                                    <hr class="star-primary">
+                                    <hr class="star-primary" />
                                 </div>
                             </div>
                             <div class="row">
+                                <?php $portfolio2_item_number = 0; ?>
                                 <?php while ( $portfolio2->have_posts() ) : $portfolio2->the_post(); ?>
                                     <div class="col-sm-4 portfolio-item">
-                                        <a href="<?php echo '#portfolioModal-'.get_the_ID() ?>" class="portfolio-link" data-toggle="modal">
+                                        <a class="portfolio-link" href="<?php echo '#portfolioModal12-'.get_the_ID() ?>" data-toggle="modal">
                                             <div class="caption">
                                                 <div class="caption-content">
                                                     <i class="fa fa-search-plus fa-3x"></i>
                                                 </div>
                                             </div>
-                                            <?php the_post_thumbnail( null, array(
+                                            <?php the_post_thumbnail( 'wp-the-post-thumbnail', array(
                                                     'class' => 'img-responsive'
                                             ) ); ?>
                                         </a>
                                     </div>
+                                    <?php $portfolio2_item_number++; ?>
+                                    <?php if( $portfolio2_item_number % 3 == 0 ) echo '<div class="clearfix visible-sm-block visible-md-block visible-lg-block"></div>'; ?>
                                 <?php endwhile; ?>
                                 <?php wp_reset_postdata(); ?>
                             </div>
@@ -376,7 +382,7 @@ get_header(); ?>
             <?php wp_reset_postdata(); ?>
         <?php endif; ?>
         <?php
-            $modals2_args = array(
+            $modals_args = array(
                 'post_type' => 'portfolio_item2',
                 'post_status' => 'publish',
                 'nopaging' => true,
@@ -384,10 +390,10 @@ get_header(); ?>
                 'orderby' => 'menu_order'
             )
         ?>
-        <?php $modals2 = new WP_Query( $modals2_args ); ?>
-        <?php if ( $modals2->have_posts() ) : ?>
-            <?php while ( $modals2->have_posts() ) : $modals2->the_post(); ?>
-                <div class="portfolio-modal modal fade" id="portfolioModal2-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-hidden="true">
+        <?php $modals = new WP_Query( $modals_args ); ?>
+        <?php if ( $modals->have_posts() ) : ?>
+            <?php while ( $modals->have_posts() ) : $modals->the_post(); ?>
+                <div class="portfolio-modal12 modal fade" id="portfolioModal12-<?php the_ID(); ?>" tabindex="-1" role="dialog" aria-hidden="true">
                     <div class="modal-content">
                         <div class="close-modal" data-dismiss="modal">
                             <div class="lr">
