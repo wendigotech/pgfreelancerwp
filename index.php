@@ -210,10 +210,10 @@ get_header(); ?>
                                 </div>
                             </div>
                             <div class="row">
-                                <?php while ( $contact->have_posts() ) : $contact->the_post(); ?>
-                                    <div class="col-lg-8 col-lg-offset-2">
-                                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                                        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                                <div class="col-lg-8 col-lg-offset-2">
+                                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                                    <?php while ( $contact->have_posts() ) : $contact->the_post(); ?>
                                         <form name="sentMessage" id="contactForm" novalidate action="<?php echo esc_url( get_template_directory_uri() ); ?>/mail/contact_me.php">
                                             <div class="row control-group">
                                                 <div class="form-group col-xs-12 floating-label-form-group controls">
@@ -261,9 +261,9 @@ get_header(); ?>
                                                 </div>
                                             </div>
                                         </form>
-                                    </div>
-                                <?php endwhile; ?>
-                                <?php wp_reset_postdata(); ?>
+                                    <?php endwhile; ?>
+                                    <?php wp_reset_postdata(); ?>
+                                </div>
                             </div>
                         </div>
                     </section>

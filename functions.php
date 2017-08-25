@@ -85,14 +85,14 @@ function freelancer_init() {
         'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'trackbacks', 'custom-fields', 'comments', 'revisions', 'page-attributes', 'post-formats' )
     ));
 
-    register_post_type('contact_item', array(
+    register_post_type('contact_item1', array(
         'labels' => 
             array(
-                'name' => __( 'Contact Items', 'freelancer' ),
-                'singular_name' => __( 'Contact Item', 'freelancer' )
+                'name' => __( 'Contact Items1', 'freelancer' ),
+                'singular_name' => __( 'Contact Item1', 'freelancer' )
             ),
         'public' => true,
-        'supports' => array( 'post-formats', 'page-attributes', 'revisions', 'custom-fields', 'trackbacks', 'thumbnail', 'author', 'excerpt', 'editor', 'comments', 'title' )
+        'supports' => array( 'title', 'editor', 'thumbnail', 'post-formats', 'page-attributes', 'revisions', 'comments', 'custom-fields', 'trackbacks', 'excerpt', 'author' )
     ));
 
     /* Pinegrow generated Custom Post Types End */
