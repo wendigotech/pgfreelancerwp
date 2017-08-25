@@ -75,7 +75,7 @@ hr.star-primary {
     opacity: 0;
     -webkit-transition: all ease .5s;
     -moz-transition: all ease .5s;
-    transition: all ease .5s;background-color: #38b5fe;
+    transition: all,ease,.5s;background-color: #38b5fe;border-radius: 45px;box-shadow: 21px 0px 47px 2px #38b5fe;
 }section.success {
     color: #fff;background-color: #38b5fe;font-family: bangers;font-variant: small-caps;box-shadow-type-0: inside;box-shadow: inset 0px 55px 77px , 1px 43px 49px -1px #38b5fe;
 }.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-hover,.navbar-default .navbar-nav>.active>a.pg-state-focus{color:#ffffff;background-color:#1a242f;border-radius: 20px;border: 2px outset #ffffff}footer {

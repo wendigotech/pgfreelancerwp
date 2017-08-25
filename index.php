@@ -85,7 +85,7 @@ get_header(); ?>
                                                 </div>
                                                 <?php
                                                     if ( has_post_thumbnail() ) {
-                                                        the_post_thumbnail( 'large', array(
+                                                        the_post_thumbnail( null, array(
                                                         'class' => 'img-responsive'
                                                     ) );
                                                     }
