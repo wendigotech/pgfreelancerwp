@@ -83,13 +83,13 @@ get_header(); ?>
                                                         <i class="fa fa-search-plus fa-3x"></i>
                                                     </div>
                                                 </div>
-                                                <?php
-                                                    if ( has_post_thumbnail() ) {
-                                                        the_post_thumbnail( null, array(
-                                                        'class' => 'img-responsive'
-                                                    ) );
-                                                    }
-                                                 ?>
+                                                <img src="<?php echo esc_url( get_template_directory_uri() ); ?>/img/portfolio/cabin.png" class="img-responsive" alt=""><?php
+                                                        if ( has_post_thumbnail() ) {
+                                                            the_post_thumbnail( null, array(
+                                                            'class' => 'img-responsive'
+                                                        ) );
+                                                        }
+                                                     ?>
                                             </a>
                                         </div>
                                         <?php $portfolio_item_number++; ?>

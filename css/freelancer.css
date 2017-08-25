@@ -20,7 +20,7 @@ a,
 a:hover,
 a:focus,
 a:active,
-a.active,a.pg-state-hover,a.pg-state-active,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
+a.active,a.pg-state-focus,a.pg-state-focus,a.pg-state-hover,a.pg-state-focus,a.pg-state-active {
     outline: 0;
     color: #18bc9c;
 }
@@ -269,7 +269,7 @@ section.success {
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
-.btn-outline.active,.btn-outline.pg-state-hover,.btn-outline.pg-state-active,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
+.btn-outline.active,.btn-outline.pg-state-focus,.btn-outline.pg-state-focus,.btn-outline.pg-state-hover,.btn-outline.pg-state-focus,.btn-outline.pg-state-active {
     border: solid 2px #fff;
     color: #18bc9c;
     background: #fff;
