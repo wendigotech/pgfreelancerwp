@@ -119,4 +119,7 @@ box-shadow: none
   background-image: url('img/photo-1500145588304-deb802b4af76.jpg');
 background-size: cover;
 background-attachment: fixed
+}#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;display: flex;
 }
