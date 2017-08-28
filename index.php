@@ -64,7 +64,7 @@ get_header(); ?>
                 ?>
                 <?php $portfolio = new WP_Query( $portfolio_args ); ?>
                 <?php if ( $portfolio->have_posts() ) : ?>
-                    <section id="portfolio" class="bkg2">
+                    <section id="portfolio">
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
@@ -184,7 +184,7 @@ get_header(); ?>
                         <div class="container">
                             <div class="row">
                                 <div class="col-lg-12 text-center">
-                                    <h2><?php _e( 'Contact Me', 'freelancer' ); ?></h2>
+                                    <h2><?php the_title(); ?></h2>
                                     <hr class="star-primary">
                                 </div>
                             </div>
