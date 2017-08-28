@@ -185,18 +185,18 @@ get_header(); ?>
                             <div class="row">
                                 <div class="col-lg-12 text-center">
                                     <hr class="star-primary">
-                                    <?php while ( $contact->have_posts() ) : $contact->the_post(); ?>
-                                        <?php single_post_title(); ?>
-                                    <?php endwhile; ?>
-                                    <?php wp_reset_postdata(); ?>
+                                    <?php single_post_title(); ?>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-lg-8 col-lg-offset-2">
-                                    <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-                                    <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-                                    <?php the_content(); ?>
-                                </div>
+                                <?php while ( $contact->have_posts() ) : $contact->the_post(); ?>
+                                    <div class="col-lg-8 col-lg-offset-2">
+                                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                                        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                                        <?php the_content(); ?>
+                                    </div>
+                                <?php endwhile; ?>
+                                <?php wp_reset_postdata(); ?>
                             </div>
                         </div>
                     </section>
