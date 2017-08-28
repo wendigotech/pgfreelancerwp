@@ -123,7 +123,7 @@ z-index: -10
     margin: 0 0 15px;display: flex;z-index: 0;
 }header {
     text-align: center;
-    color: #fff;background-color: #3db3f8;font-family: bangers;box-shadow-type-0: outside;box-shadow: 40px 49px 52px #3db3f8;position: relative;
+    color: #fff;background-color: #3db3f8;font-family: bangers;box-shadow-type-0: outside;box-shadow: 32px 40px 49px 59px #3db3f8;position: relative;
 }footer .footer-below {
     padding: 25px 0;
     background-color: #000000;font-family: bangers;box-shadow-type-0: inside;box-shadow: inset 0px -13px 31px , 0px -19px 20px #000000;
