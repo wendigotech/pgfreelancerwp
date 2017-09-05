@@ -12,10 +12,9 @@ get_header(); ?>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <?php if ( ! has_custom_logo() ) : ?>
-                        <?php pg_starter_the_custom_logo() ?>
-                    <?php endif; ?>
+                    <a class="navbar-brand navbar-custom-brand navbar-shrink" href="<?php echo esc_url( home_url() ); ?>" img resposive=""><?php _e( 'Harold Pine', 'freelancer' ); ?> </a>
                 </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden">
@@ -32,7 +31,6 @@ get_header(); ?>
                         </li>
                     </ul>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <!-- /.navbar-collapse -->
             </div>
             <!-- /.container-fluid -->
