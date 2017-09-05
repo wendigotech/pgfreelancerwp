@@ -12,7 +12,7 @@ get_header(); ?>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand navbar-custom-brand navbar-shrink" href="<?php echo esc_url( home_url() ); ?>" img resposive=""><?php _e( 'Harold Pine', 'freelancer' ); ?> </a>
+                    <a class="navbar-brand navbar-custom-brand navbar-shrink" href="#page-top" img resposive=""><?php _e( 'Harold Pine', 'freelancer' ); ?> </a>
                 </div>
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
