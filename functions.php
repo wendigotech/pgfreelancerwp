@@ -145,33 +145,36 @@ if ( ! function_exists( 'freelancer_enqueue_scripts' ) ) :
 
         /* Pinegrow generated Enqueue Scripts Begin */
 
-    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-1.12.4.min.js', null, null, true );
+    wp_deregister_script( 'jquery' );
+    wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-1.12.4.min.js', false, null, true);
 
-    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js' );
+    wp_deregister_script( 'bootstrap' );
+    wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/js/bootstrap.min.js', false, null, true);
 
-    wp_enqueue_script( 'jqueryeasing', 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', null, null, true );
+    wp_deregister_script( 'jqueryeasing' );
+    wp_enqueue_script( 'jqueryeasing', 'http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js', false, null, true);
 
-    wp_enqueue_script( 'classie', get_template_directory_uri() . '/js/classie.js', null, null, true );
+    wp_deregister_script( 'classie' );
+    wp_enqueue_script( 'classie', get_template_directory_uri() . '/js/classie.js', false, null, true);
 
-    wp_enqueue_script( 'cbpanimatedheader', get_template_directory_uri() . '/js/cbpAnimatedHeader.js' );
+    wp_deregister_script( 'cbpanimatedheader' );
+    wp_enqueue_script( 'cbpanimatedheader', get_template_directory_uri() . '/js/cbpAnimatedHeader.js', false, null, true);
 
-    wp_enqueue_script( 'jqbootstrapvalidation', get_template_directory_uri() . '/js/jqBootstrapValidation.js', null, null, true );
-
-    wp_enqueue_script( 'freelancer', get_template_directory_uri() . '/js/freelancer.js', null, null, true );
+    wp_deregister_script( 'jqbootstrapvalidation' );
+    wp_enqueue_script( 'jqbootstrapvalidation', get_template_directory_uri() . '/js/jqBootstrapValidation.js', false, null, true);
 
     wp_deregister_script( 'contact_me' );
     wp_enqueue_script( 'contact_me', get_template_directory_uri() . '/js/contact_me.js', false, null, true);
+
+    wp_deregister_script( 'freelancer' );
+    wp_enqueue_script( 'freelancer', get_template_directory_uri() . '/js/freelancer.js', false, null, true);
 
     /* Pinegrow generated Enqueue Scripts End */
 
         /* Pinegrow generated Enqueue Styles Begin */
 
-    wp_enqueue_style( 'custom', get_template_directory_uri() . '/custom.css', null, null, 'all' );
-
-    wp_enqueue_style( 'style-1', 'https://fonts.googleapis.com/css?family=Bangers:400', null, null, 'all' );
-
-    wp_deregister_style( 'style-2' );
-    wp_enqueue_style( 'style-2', 'http://fonts.googleapis.com/css?family=Akronim:400', false, null, 'all');
+    wp_deregister_style( 'style-1' );
+    wp_enqueue_style( 'style-1', 'http://fonts.googleapis.com/css?family=Akronim:400', false, null, 'all');
 
     wp_deregister_style( 'bootstrap' );
     wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', false, null, 'all');
@@ -182,11 +185,17 @@ if ( ! function_exists( 'freelancer_enqueue_scripts' ) ) :
     wp_deregister_style( 'fontawesome' );
     wp_enqueue_style( 'fontawesome', get_template_directory_uri() . '/font-awesome/css/font-awesome.min.css', false, null, 'all');
 
+    wp_deregister_style( 'style-2' );
+    wp_enqueue_style( 'style-2', 'http://fonts.googleapis.com/css?family=Montserrat:400,700', false, null, 'all');
+
     wp_deregister_style( 'style-3' );
-    wp_enqueue_style( 'style-3', 'http://fonts.googleapis.com/css?family=Montserrat:400,700', false, null, 'all');
+    wp_enqueue_style( 'style-3', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', false, null, 'all');
+
+    wp_deregister_style( 'custom' );
+    wp_enqueue_style( 'custom', get_template_directory_uri() . '/custom.css', false, null, 'all');
 
     wp_deregister_style( 'style-4' );
-    wp_enqueue_style( 'style-4', 'http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', false, null, 'all');
+    wp_enqueue_style( 'style-4', 'https://fonts.googleapis.com/css?family=Bangers:400', false, null, 'all');
 
     /* Pinegrow generated Enqueue Styles End */
 
